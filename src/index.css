@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+
+body{
+/* background-color: #371d5c; */
+background-color:#000000;
+}
+
+
+.navbar{
+position: fixed;
+/* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+
+}
+
+.heading {
+  display: inline;
+  background-color: darkblue;
+
+  overflow: hidden;
+  /* font-family: "Sigmar", serif;; */
+  border-right: 3px solid blue; /* Typing cursor effect */
+  white-space: nowrap; /* Cursor content ke end tak rahega */
+  width: max-content; /* Cursor content ke end tak rahega */
+  animation: typing 3s steps(20, end) infinite alternate, 
+             blink 0.4s step-end infinite;
+             animation-fill-mode: forwards;
+}
+
+.overall{
+/* background-color: #F8F8F8; */
+
+}
+
+.heading3{
+  font-family: "bold";
+  background-color: darkblue;
+  /* background-color: bg-gradient(linear, left top, left bottom, from(#4544AD), to(#4544AD)); */
+}
+
+@keyframes typing {
+  0% { width: 0 }
+  50% { width: 60% }
+  100% { width: 0 }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.imagecards{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-position-x: center;
+background-position-y: center;
+background-attachment: fixed;
+aspect-ratio: 2/1;
+
+}
+
+
+
+
+.social-login-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
+  }
+  .social-login-icons svg {
+    width: 40px;
+  }
+  
+  .social-icon-1,
+  .social-icon-1-1,
+  .social-icon-2,
+  .social-icon-2-2,
+  .social-icon-3,
+  .social-icon-3-3,
+  .social-icon-4,
+  .social-icon-4-4 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 20px 0 0px 0;
+  }
+  
+  .icon svg {
+    fill: #fff;
+  }
+  
+  .socialcontainer {
+    height: 80px;
+    overflow: hidden;
+  }
+  .social-icon-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  }
+  .social-icon-1 svg,
+  .social-icon-2 svg,
+  .social-icon-3 svg,
+  .social-icon-4 svg {
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+  }
+  .social-icon-1-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0, 0);
+  }
+  .socialcontainer:hover .social-icon-1 {
+    transform: translateY(-70px);
+  }
+  .socialcontainer:hover .social-icon-1 svg,
+  .socialcontainer:hover .social-icon-2 svg,
+  .socialcontainer:hover .social-icon-3 svg,
+  .socialcontainer:hover .social-icon-4 svg {
+    opacity: 1;
+  }
+  .social-icon-2 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: linear-gradient(
+      72.44deg,
+      #ff7a00 11.92%,
+      #0112ff 51.56%,
+      #0112ff 51.56%
+    );
+  }
+  .socialcontainer:hover .social-icon-2 {
+    transform: translateY(-70px);
+  }
+  .social-icon-3 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: #316ff6;
+  }
+  
+  .socialcontainer:hover .social-icon-3 {
+    transform: translateY(-70px);
+  }
+  .social-icon-4 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  
+    background: linear-gradient(
+      180deg,
+      rgba(129, 34, 144, 1) 0%,
+      rgba(77, 34, 124, 1) 91%
+    );
+  }
+  
+  .socialcontainer:hover .social-icon-4 {
+    transform: translateY(-70px);
+  }
+  /* From Uiverse.io by ShadowShahriar */ 
+  #btn {
+    margin-top: 30px;
+    /* --border-radius: 15px; */
+    /* --border-width: 4px; */
+    appearance: none;
+    /* position: relative; */
+    padding: 1em 6em;
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    background-color: #212121;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+  }
+
+  #about2{
+    margin-top: 30px;
+
+    padding: 1em 6em;
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    background-color: #212121;
+    font-family: "Roboto", Arial, "Segoe UI", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    z-index: 2;
+    border-radius: 30px;
+
+  }
+  
+  #btn::after {
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: var(--border-width);
+    border-radius: var(--border-radius);
+    background-image: conic-gradient(#488cfb,
+            /* #29dbbc, */
+            /* #ddf505, */
+            /* #ff9f0e, */
+            /* #e440bb, */
+            /* #655adc, */
+            /* #488cfb */
+            );
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue linear 500ms infinite;
+    animation-play-state: paused;
+  }
+  
+  #btn:hover::after {
+    animation-play-state: running;
+  }
+  
+  @keyframes rotate-hue {
+    to {
+        filter: hue-rotate(1turn);
+    }
+  }
+  
+  #btn,
+  #btn::after {
+    box-sizing: border-box;
+  }
+  
+  #btn:active {
+    --border-width: 5px;
+  }
+  #logo{
+    position: absolute;
+    top: 5px !important;
+    margin-left: 30px !important;
+  }
+
