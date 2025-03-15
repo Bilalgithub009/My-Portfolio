@@ -18,3 +18,23 @@ const styles = {
   };
   
   export { styles };
+
+
+
+  let x = 2;
+let y = 3;
+const z = 10;
+
+{
+ let x = 3e-3;
+ let y = 100;
+ let a = 0.001;
+ const z = 1000;
+
+}
+console.log(x + y + z);
+
+
+let msg1 = "hello";
+let msg2 = msg1.slice(-1);
+console.log(msg2 ? msg2 : msg2 + msg1);

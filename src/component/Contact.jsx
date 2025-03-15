@@ -27,7 +27,7 @@ function Contact() {
   };
 
   const removecontent = () => {
-    
+
   }
 
   return (
@@ -38,7 +38,7 @@ function Contact() {
           <div className="lg:w-1/2 w-full text-left mb-12 lg:mb-0">
             <h1 className="sm:text-5xl text-4xl font-bold text-white text-center mb-6">Contact Us</h1>
             <p className="text-white text-xl text-center font-medium mb-6">
-              Thank you for visiting my website. If you have any 
+              Thank you for visiting my website. If you have any
               <br />
               questions or comments, feel free to reach out!
             </p>
@@ -69,7 +69,7 @@ function Contact() {
           {/* Right Side - Contact Form */}
           <div className="lg:w-1/2 w-full bg-gray-800 p-8 rounded-lg shadow-lg">
             <form ref={form} onSubmit={sendEmail}>
-              <div className="flex flex-wrap -m-2">
+              <div className="flex flex-wrap m-">
                 {/* Name Input */}
                 <div className="p-2 md:w-1/2 w-full">
                   <label htmlFor="name" className="block text-white text-sm font-semibold mb-3">Name</label>
@@ -77,7 +77,7 @@ function Contact() {
                     type="text"
                     name="user_name"
                     className="w-full rounded-lg bg-gray-700 border border-gray-600 focus:border-indigo-400 text-white p-3 outline-none focus:ring-2 focus:ring-indigo-300 transition-all duration-300 placeholder:translate-x-2 placeholder:scale-90 focus:placeholder:translate-x-0 focus:placeholder:scale-100"
-                    placeholder="Enter your name"
+                    placeholder="Bilal Ahmed"
                     required
                   />
                 </div>
@@ -89,7 +89,7 @@ function Contact() {
                     type="email"
                     name="user_email"
                     className="w-full rounded-lg bg-gray-700 border border-gray-600 focus:border-indigo-400 text-white p-3 outline-none focus:ring-2 focus:ring-indigo-300 transition-all duration-300 placeholder:translate-x-2 placeholder:scale-90 focus:placeholder:translate-x-0 focus:placeholder:scale-100"
-                    placeholder="Enter your email"
+                    placeholder="m.bilaljaliyawala@gmail.com"
                     required
                   />
                 </div>
@@ -99,8 +99,8 @@ function Contact() {
                   <label htmlFor="message" className="block text-white text-sm font-semibold mb-2 mt-4">Message</label>
                   <textarea
                     name="message"
-                    className="w-full rounded-lg bg-gray-700 border border-gray-600 focus:border-indigo-400 text-white p-6 outline-none focus:ring-2 focus:ring-indigo-300 transition-all duration-300 placeholder:translate-x-2 placeholder:scale-90 focus:placeholder:translate-x-0 focus:placeholder:scale-100"
-                    placeholder="Write your message here..."
+                    className="w-full rounded-lg bg-gray-700 border border-gray-600 focus:border-indigo-400 text-white p-5 outline-none focus:ring-2 focus:ring-indigo-300 transition-all duration-300 placeholder:translate-x-2 placeholder:scale-90 focus:placeholder:translate-x-0 focus:placeholder:scale-100"
+                    placeholder="Looking for a proficient software developer skilled in JS and React for a specfic project"
                     required
                   ></textarea>
                 </div>
