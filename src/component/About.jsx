@@ -19,8 +19,8 @@ function About() {
             <img
               alt="profile"
               className="imagecards hover:scale-110 sm:max-w-full sm:max-h-full  transition-transform duration-500 lg:w-1/2 sm:w-3/4 w-full h-auto object-cover object-center rounded shadow-lg"
-              src={"./src/images/image.jpeg"}
-              // src="https://avatars.githubusercontent.com/u/77411692?v=4"
+              // src={"./src/images/image.jpeg"}
+              src="https://avatars.githubusercontent.com/u/77411692?v=4"
             />
 
             <div className="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
