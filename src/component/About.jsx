@@ -28,7 +28,7 @@ function About() {
                 I M BILAL AHMED
               </h1>
               <div className="flex mb-4 text-white">
-                src={"./src/images/image.jpeg"}
+                {/* src={"./src/images/image.jpeg"} */}
                 <p>Frontend Developer | Full Stack Developer</p>
               </div>
               <p className="leading-relaxed text-white font-semi-bold">
