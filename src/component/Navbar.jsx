@@ -74,7 +74,7 @@ const Navbar = () => {
               service
             </Link>
 
-            <Button onClick={handleResumeClick}  className="text-3xl">Resume</Button>
+            {/* <Button onClick={handleResumeClick}  className="text-3xl">Resume</Button> */}
             
           </nav>
         </div>
