@@ -23,7 +23,9 @@ const Navbar = () => {
   // Resume button ke click handler
   const handleResumeClick = (e) => {
     e.stopPropagation(); // Prevent bubbling issue
-    window.open("/public/frontend-update", "_blank");
+    // window.open("/public/frontend-update", "_blank");
+    window.open("https://www.facebook.com/", "_blank");
+
   };
 
   return (
