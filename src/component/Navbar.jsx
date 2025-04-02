@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       <header className="fixed top-0 left-0 w-full z-50">
-        <div className="navbar container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between">
+        <div className="navbar container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center justify-between">
           <a className="title-font  text-white text-[28px] font-bold cursor-pointer ">
             <span className="text-white heading2  text-[28px] font-bold cursor-pointer flex">
               Bilal Ahmed
