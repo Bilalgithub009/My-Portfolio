@@ -17,9 +17,9 @@ function About() {
 
 
             <img
-              alt="prof"
+              alt="profile"
               className="imagecards hover:scale-110 sm:max-w-full sm:max-h-full  transition-transform duration-500 lg:w-1/2 sm:w-3/4 w-full h-auto object-cover object-center rounded shadow-lg"
-              src={".//src/images/image.jpeg"}
+              src={"../myportfolio/src/assets/images/image.jpeg"}
               
             />
 
@@ -28,7 +28,6 @@ function About() {
                 I M BILAL AHMED
               </h1>
               <div className="flex mb-4 text-white">
-                {/* src={"./src/images/image.jpeg"} */}
                 <p>Frontend Developer | Full Stack Developer</p>
               </div>
               <p className="leading-relaxed text-white font-semi-bold">

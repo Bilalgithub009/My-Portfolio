@@ -68,7 +68,7 @@ background-size: cover;
 background-position-x: center;
 background-position-y: center;
 background-attachment: fixed;
-aspect-ratio: 2/1;
+/* aspect-ratio: 2/1; */
 
 }
 
