@@ -71,6 +71,9 @@ const Navbar = () => {
             >
               service
             </Link>
+
+            <Button onClick={handleResumeClick}  className="text-3xl">Resume</Button>
+            
           </nav>
         </div>
       </header>
@@ -92,12 +95,12 @@ const Navbar = () => {
             </p>
 
             <div className="flex justify-center items-center gap-10">
-              <button
+              {/* <button
                 onClick={handleResumeClick} // Sirf Resume button par ye chalega
                 className="mt-14 text-xl font-bold bg-white text-balck rounded-full px-12 ms-4 py-4 pe-"
               >
                 Download Resume <i className="fa-solid fa-download ms-4 mt-1"></i>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
