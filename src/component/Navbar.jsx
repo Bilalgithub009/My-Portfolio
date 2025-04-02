@@ -23,7 +23,7 @@ const Navbar = () => {
   // Resume button ke click handler
   const handleResumeClick = (e) => {
     e.stopPropagation(); // Prevent bubbling issue
-    window.open("../public/resume2", "_blank");
+    window.location.href("/public/resume2", "_blank");
     
 
   };
