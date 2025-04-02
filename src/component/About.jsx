@@ -19,7 +19,7 @@ function About() {
             <img
               alt="profile"
               className="imagecards hover:scale-110 sm:max-w-full sm:max-h-full  transition-transform duration-500 lg:w-1/2 sm:w-3/4 w-full h-auto object-cover object-center rounded shadow-lg"
-              src={"../myportfolio/src/assets/images/image.jpeg"}
+              src={"../assets/images/bilal.jpg"}
               
             />
 
