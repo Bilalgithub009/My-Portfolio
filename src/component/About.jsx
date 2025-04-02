@@ -20,7 +20,8 @@ function About() {
               alt="profile"
               className="imagecards hover:scale-110 sm:max-w-full sm:max-h-full  transition-transform duration-500 lg:w-1/2 sm:w-3/4 w-full h-auto object-cover object-center rounded shadow-lg"
               // src={"../src/images/bilal.jpg"}
-              src={require("../images/bilal.jpg")}
+              // src={require("../images/bilal.jpg")}
+              src={"https://plus.unsplash.com/premium_photo-1678565879444-f87c8bd9f241?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D"}
               
             />
 
