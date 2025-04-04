@@ -1,5 +1,5 @@
 import './App.css'
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Navbar from './component/Navbar';
 import About from './component/About';
 import Project from './component/Project';
@@ -15,7 +15,8 @@ import Footer from './component/Footer';
 function App() {
   return(
      <>
-      
+
+     
      <Navbar/>
      <About/>
      <Skills/>
@@ -23,6 +24,9 @@ function App() {
      <Service/>
      <Contact/>
      <Footer/>
+      
+
+     
      
 
 

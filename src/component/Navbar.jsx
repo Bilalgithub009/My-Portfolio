@@ -1,6 +1,9 @@
 import { Button } from "antd";
 import React, { useEffect, useState } from "react";
+// import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
+import Resume from "./Resume";
+
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -22,8 +25,12 @@ const Navbar = () => {
 
   // Resume button ke click handler
   const handleResumeClick = (e) => {
-    e.stopPropagation(); // Prevent bubbling issue
-    window.open("/public/resume2", "_blank");
+    e.preventDefault(); // Prevent default behavior if needed
+    // alert("Resume button clicked!"); // Alert for demonstration
+    // e.stopPropagation(); // Prevent bubbling issue
+    // window.open( "/resume" ,"_blank");
+    window.location.href = "/Resume"; // Redirect to the resume page
+  window.open("/resume", "_blank"); // Open in a new tab
     
 
   };
@@ -37,7 +44,7 @@ const Navbar = () => {
               Bilal Ahmed
             </span>
           </a>
-          <nav className=" md:ml-auto md:mr-28 flex  flex-wrap items-center text-base justify-center">
+          <nav className=" md:ml-auto md:mr-4 flex   flex-wrap items-center text-base justify-center">
             <a
               className=" hover:text-blue-500 text-white font-bold text-xl cursor-pointer"
             >
@@ -74,7 +81,15 @@ const Navbar = () => {
               service
             </Link>
 
-            {/* <Button onClick={handleResumeClick}  className="text-3xl">Resume</Button> */}
+            <div className="">
+  <Button
+    onClick={() => window.open('/public/resume2.pdf', '_blank')}
+    className="mt- text-xl font-bold hover:bg-green text-black rounded-full px-12 ms-4 py-4 pe"
+  >
+    Resume
+  </Button>
+</div>
+
             
           </nav>
         </div>
