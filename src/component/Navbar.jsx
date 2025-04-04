@@ -83,7 +83,7 @@ const Navbar = () => {
 
             <div className="">
   <Button
-    onClick={() => window.open('/public/resume2.pdf', '_blank')}
+    onClick={() => window.open('/resume2.pdf', '_blank')}
     className="mt- text-xl font-bold hover:bg-green text-black rounded-full px-12 ms-4 py-4 pe"
   >
     Resume
