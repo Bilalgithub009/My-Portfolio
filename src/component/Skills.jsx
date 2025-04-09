@@ -19,7 +19,10 @@ function Skills() {
 
   return (
     <>
-      <section id="skills-section" className="overall w-full text-gray-600 bg-gradient-to-r bg-#F8F8F8 body-font ">
+      <section
+        id="skills-section"
+        className="overall w-full text-gray-600 bg-gradient-to-r from-[#1c1c1c] to-[#333333] body-font"
+      >
         <div className="container mx-auto px-4 ">
           <div className="flex flex-col text-center w-full mb-8">
             <div className="flex flex-col text-center w-full mb-8 bg-gradient-to-r py-10 rounded-lg">
@@ -33,13 +36,13 @@ function Skills() {
             {/* Skill Cards */}
             <div className="flex flex-wrap m-12 text-center">
               <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-                <div className="border-2 border-gray-200 px- py-8 rounded-lg hover:shadow-lg hover:scale-105 transition-transform bg-white">
+                <div className="border-2 border-gray-200 px-6 py-8 rounded-lg hover:shadow-lg hover:scale-105 transition-transform bg-white">
                   <img
                     className="w-20 h-20 mx-auto mb-4"
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxk8D0ycM6qcGE6lUkmkBTo0KQ_XhnATYtHw&s"
                     alt="HTML5"
                   />
-                  <h2 className="title-font font-medium text-2xl text-gray-9">HTML5</h2>
+                  <h2 className="title-font font-medium text-2xl text-gray-900">HTML5</h2>
                 </div>
               </div>
 

@@ -47,9 +47,9 @@ function ProjectCard({ project }) {
   };
 
   return (
-    <div className="p-4 md:w-1/3 relative">
+    <div className="p-4 md:w-1/3 relative ">
       <div
-        className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden shadow-lg transform perspective-1000 transition-all duration-700 ease-out"
+        className="h-full border-2 border-gray-200 border-opacity-60 text-gray-600 bg-gradient-to-r from-[#1c1c1c] to-[#333333] body-font rounded-lg overflow-hidden shadow-lg transform perspective-1000 transition-all duration-700 ease-out"
         style={{ transform: `perspective(1000px) rotateX(${tilt}deg)` }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
