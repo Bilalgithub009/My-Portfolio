@@ -2,7 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Button } from "antd";
 import { Link } from "react-scroll";
 import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
-
+import { Links } from "react-router-dom";
+// import bilalimage from '../images/gallery.jpeg'
+// import { Link } from "react-router-dom";
+  
+// const check = ()=>{
+//     alert('hekko')
+//   }
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,6 +27,8 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  
 
   return (
     <>
@@ -75,12 +83,45 @@ const Navbar = () => {
             >
               Service
             </Link>
-            <Button
-              onClick={() => window.open("/resume2.pdf", "_blank")}
-              className="bg-white text-black font-semibold rounded-full px-6 py-2 hover:bg-green-500"
-            >
-              Resume
-            </Button>
+
+              
+              {/* <button className="bg-white text-black font-semibold rounded-full px-6 py-2 hover:bg-green-500">
+                Resume
+              </button>
+               */}
+
+               <>
+  {/* From Uiverse.io by satyamchaudharydev */}
+  <div className="button" data-tooltip="Size: 20Mb">
+    <div className="button-wrapper">
+      <Link to="/resume">
+      <div className="text">Resume <br /></div>
+      </Link>
+      <span className="icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+          role="img"
+          width="2em"
+          height="2em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+          />
+        </svg>
+      </span>
+    </div>
+  </div>
+</>
+
+            
           </nav>
 
           {/* Mobile Menu Button */}
@@ -154,44 +195,43 @@ const Navbar = () => {
 
       {/* Home Section */}
       <section
-  id="Home-section"
-  className="Home-section text-white bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] body-font"
->
-  <div className="container mx-auto flex px-8 py-24 md:flex-row flex-col items-center">
-    {/* Left Content */}
-    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-14 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 className="text-4xl sm:text-6xl font-bold leading-tight animate__animated animate__fadeInUp">
-        Hello 👋, It's Me <br className="sm:hidden" />{" "}
-        <span className="text-blue-400">Bilal Ahmed</span>
-      </h1>
-      <h2 className="text-2xl sm:text-4xl font-semibold mt-4 text-gray-300">
-        I am a <span className="text-green-400">Frontend Developer</span>
-      </h2>
-      <p className="mt-8 text-xl sm:text-2xl text-gray-400 font-medium">
-        Based in Karachi, Pakistan
-      </p>
-      <p className="text-lg sm:text-xl text-gray-300 font-semibold mt-4">
-        Specialized in{" "}
-        <span className="text-pink-400">HTML, CSS, JavaScript</span>,{" "}
-        <span className="text-yellow-300">React.js</span>,{" "}
-        <span className="text-blue-300">Next.js</span>
-      </p>
-    </div>
+        id="Home-section"
+        className="Home-section text-white bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] body-font"
+      >
+        <div className="container mx-auto flex px-8 py-24 md:flex-row flex-col items-center">
+          {/* Left Content */}
+          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-14 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 className="text-4xl sm:text-6xl font-bold leading-tight animate__animated animate__fadeInUp">
+              Hello 👋, It's Me <br className="sm:hidden" />{" "}
+              <span className="text-blue-400">Bilal Ahmed</span>
+            </h1>
+            <h2 className="text-2xl sm:text-4xl font-semibold mt-4 text-gray-300">
+              I am a <span className="text-green-400">Frontend Developer</span>
+            </h2>
+            <p className="mt-8 text-xl sm:text-2xl text-gray-400 font-medium">
+              Based in Karachi, Pakistan
+            </p>
+            <p className="text-lg sm:text-xl text-gray-300 font-semibold mt-4">
+              Specialized in{" "}
+              <span className="text-pink-400">HTML, CSS, JavaScript</span>,{" "}
+              <span className="text-yellow-300">React.js</span>,{" "}
+              <span className="text-blue-300">Next.js</span>
+            </p>
+          </div>
 
-    {/* Right Side Image */}
-    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-    <img
-  className="object-cover object-center rounded-2xl shadow-2xl"
-  alt="hero"
-  src="https://images.unsplash.com/photo-1735825764452-7c77b0bbd7a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MTA1fHx0ZWNobm9sb2d5fGVufDB8fDB8fHww"
-/>
-    </div>
-  </div>
-</section>
-
-
+          {/* Right Side Image */}
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img
+              className="object-cover object-center rounded-2xl shadow-2xl"
+              alt="hero"
+              // src={bilalimage}
+              src="https://images.unsplash.com/photo-1735825764452-7c77b0bbd7a7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8MTA1fHx0ZWNobm9sb2d5fGVufDB8fDB8fHww"
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
-};  
+};
 
 export default Navbar;
